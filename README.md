@@ -1,65 +1,57 @@
-
-
-
-# 👋 Hi, I'm Aditya!
-
-I'm a tech enthusiast with a passion for developing innovative solutions, crafting intuitive user experiences, and exploring the intersection of AI, Machine Learning, and software development. I’m currently involved in various exciting projects ranging from AI learning platforms to mobile and web apps.
-
----
-
-### 🚀 Current Projects & Interests
-
-- **AI Literacy for Schools**: Working towards improving AI education by developing an intuitive platform for teachers and students.
-- **Grievance App**: Building a mobile app for campus-related grievances using Java, Android SDK, Firebase, and SQLite. This app focuses on helping students with hostel, food, admin, and other issues.
-- **Valorant AI Project**: Developing an AI in Python to capture key moments in Valorant gameplay, specifically focusing on utilities and lineups from game videos on platforms like YouTube, Twitch, and Kick.
-- **2D AI Learning Workshop**: Creating a dark-themed, skill-sharing inspired webpage for an intensive AI workshop.
-- **Personal Website**: Built using Next.js 14, TypeScript, TailwindCSS, and Daisy UI. Hosted on Vercel with Google Analytics integrated for monitoring. Ongoing optimization for faster image loading.
+<h1 align="center">Hey, I'm Aditya (aka Aadi) 👋</h1>
+<p align="center">
+  🧠 Tech Explorer | 🤖 AI Agent Dev Intern | 🚀 Cognouso Founder <br/>
+  🎓 B.Tech CSE | 🎯 Fall 2026 MS Aspirant | 🛠️ Startup-Mode Activated
+</p>
 
 ---
 
-### 🛠️ Technologies & Tools
+### 🚀 What I'm Currently Working On
 
-- **Frontend**: React, Next.js, TailwindCSS, Daisy UI, Framer Motion, TypeScript
-- **Backend**: Firebase, Node.js
-- **Mobile Development**: Java, Android SDK, SQLite
-- **AI/ML**: Python, Machine Learning Algorithms
-- **Web Hosting**: Vercel
-- **Tools**: Git, Google Analytics, Swiper.js
-
----
-
-### 🧑‍💻 What I'm Studying
-
-- **Machine Learning**: Delving deeper into ML concepts to enhance my AI literacy projects.
-
-  
----
-
-### 🎯 Future Goals
-
-- **Master's in Computer Science**: With a focus on AI and Machine Learning.
-
-  
----
-
-### 💡 Fun Fact
-
-
+- 🧠 **Cognouso** – Building a platform to **democratize AI literacy** for schools & educators. Think AI-for-Education meets Skillshare/Coursera.
+- 📱 **Grievance App** – Android app (Java + Firebase + SQLite) to streamline college student issues – from food to hostel complaints.
+- 🎮 **Valorant AI Agent** – Python-based tool that extracts key utility lineups from gameplay videos across YouTube, Twitch & Kick.
+- 🧑‍🏫 **2D AI Learning Workshop** – Designing a dark-themed educational site inspired by edX & Skillshare for a hands-on AI bootcamp.
+- 🌐 **Portfolio Site** – Built with Next.js 14 + Tailwind + TypeScript + DaisyUI. Hosted on Vercel, constantly optimizing image load times and UX.
 
 ---
 
-### 📫 Let's Connect!
+### 🛠️ Stack & Tools I Use Often
 
-- **Portfolio**: [Cognouso](https://cognouso.vercel.app/)
-- **Instagram**: Co-founder vibes coming soon...
-
-
----
-
-### 🚧 Work in Progress
-
-- Continuously improving mobile responsiveness, optimizing user experience, and integrating motion effects for my projects. Always learning and ready for challenges!
+- **Frontend**: React, Next.js, TailwindCSS, DaisyUI, TypeScript, Framer Motion  
+- **Backend & DB**: Firebase, Node.js, SQLite  
+- **AI/ML**: Python, Pandas, NumPy, Langchain, ADK, n8n   
+- **Dev Tools**: Git, Vercel, Google Analytics, Swiper.js, VS Code  
+- **Learning**: Django, Deep Learning, Cloud (coming soon...)
 
 ---
 
-✨ Thanks for stopping by! Meowww! 😸
+### 🎓 What I’m Learning & Preparing For
+
+- 📚 **Deep Learning & ML** – Actively upskilling for better AI product building
+- 🌍 **IELTS Prep** – Targeting 8.5+ Band for Fall 2026  
+- 💼 **DSA + Backend Mastery** – Focused grind with LinuxSocials  
+- 🛫 **MS Abroad** – Finalizing uni shortlists for Sweden, Canada & Germany
+
+---
+
+### 🧠 Goals That Keep Me Up (in a good way)
+
+- ✨ Create scalable, impactful AI products
+- 🎓 Get into a great university for MS in CS/AI
+- 🌱 Build Cognouso into a movement, not just a startup
+- 💼 Land a hybrid role that balances freelance, research, and product dev
+
+---
+
+### 📫 Let’s Connect
+
+- 🔗 LinkedIN: [aditya](https://www.linkedin.com/in/ambadeaditya/)
+- 📸 Instagram: [adx_0011](https://www.instagram.com/adx_0011/)
+- 🧑‍🚀 Reach me for: collaborations, startup ideas, AI tools, or just geeking out
+
+---
+
+> 🧩 "Still learning. Still building. Still dreaming."
+
+Thanks for scrolling — you're awesome 🫶  
