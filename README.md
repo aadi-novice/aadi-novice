@@ -1,173 +1,167 @@
 <div align="center">
 
-<!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=120&section=header&text=ADITYA%20AMBADE&fontSize=42&fontColor=FFFFFF&fontAlignY=38&desc=AI%2FML%20Engineer%20%7C%20RAG%20Architect%20%7C%20Builder&descAlignY=60&descSize=16&descColor=0d1117" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:6366f1&height=140&section=header&text=Aditya%20Ambade&fontSize=44&fontColor=ffffff&fontAlignY=50&desc=AI%20engineer%20%C2%B7%20RAG%20and%20agents%20%C2%B7%20full%20stack&descAlignY=72&descSize=16" width="100%"/>
 
-<!-- TYPING ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=15&duration=2800&pause=900&color=00FF41&center=true&vCenter=true&width=600&lines=Building+AI+that+moves+people+%E2%80%94+literally.;RAG+%7C+Hybrid+Search+%7C+LLM+Orchestration;Final+Year+CS+%40+ITM+SLS+Baroda+University;Open+to+Internships+%26+Research+Roles;Targeting+Funded+Masters+%E2%80%94+JP+%7C+NZ+%7C+CA+%7C+DE" alt="Typing SVG" />
+**I build AI systems that retrieve, reason and automate — and the products around them.**
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-ambade.me-6366f1?style=flat-square&logo=googlechrome&logoColor=white)](https://ambade.me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ambadeaditya-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ambadeaditya)
+[![Email](https://img.shields.io/badge/Email-aditya.ambade@outlook.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aditya.ambade@outlook.com)
+![Views](https://komarev.com/ghpvc/?username=aadi-novice&color=6366f1&style=flat-square&label=profile+views)
+
+</div>
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=aadi-novice&color=00FF41&style=flat-square&label=PROFILE+VIEWS)
+## 👋 About
 
-</div>
+I'm an **AI Automation Engineer** at Automated Softtech in GIFT City, Gandhinagar, and a 2026 BTech CSE graduate from ITM SLS Baroda University (CGPA 8.34). I work mostly on RAG, hybrid search, LLM orchestration and agent workflows, and I like taking them all the way to a deployed product.
 
----
-
-## `$ whoami`
-
-```python
-aditya = {
-    "name"       : "Aditya Ambade",
-    "role"       : "AI/ML Engineer  |  Final Year CS Undergrad",
-    "university" : "ITM SLS Baroda University, Vadodara 🇮🇳",
-    "current"    : "Intern @ NeuralVedaX — RAG · Hybrid Search · LLM Orchestration",
-    "building"   : "KinetiAI — Multimodal AI Physical Therapy Assistant",
-    "next_move"  : "Funded Masters → Japan 🇯🇵 | New Zealand 🇳🇿 | Canada 🇨🇦 | Germany 🇩🇪",
-    "interests"  : ["AI Agents", "RAG Systems", "Robotics", "Fintech", "Anime"],
-    "status"     : "🟢 OPEN — Internships & Research Collaborations",
-}
-```
-
----
-
-## `$ ls -la ./projects`
-
-<details>
-<summary><b>🦾 KinetiAI — Multimodal AI Physical Therapy Assistant</b>&nbsp;&nbsp;<code>FEATURED</code></summary>
-<br>
-
-> *"What if your physiotherapist never left the room?"*
-
-An end-to-end AI rehabilitation system for ACL recovery — combining real-time biomechanical sensing with conversational AI.
-
-```
-┌─────────────────────────────────────────────────────┐
-│  Unity Android Client                               │
-│  └── AR Skeleton Overlay + Pose Estimation          │
-│                                                     │
-│  FastAPI Backend (Azure)                            │
-│  ├── Groq Whisper  →  STT                           │
-│  ├── LLaMA 3.1     →  LLM Dialogue                  │
-│  ├── FAISS RAG     →  Clinical Knowledge Base       │
-│  └── Sarvam AI     →  TTS                           │
-└─────────────────────────────────────────────────────┘
-```
-
-**What makes it novel:**
-- 🦴 3D rep-counting via angle-based biomechanical state machine
-- 🎙️ Voice LLM dialogue mid-exercise, no screen needed
-- 📚 RAG-grounded responses — no hallucinated therapy advice
-- 📄 **2× IEEE papers submitted** at AI Fusion Conference
-
-[![View Repo](https://img.shields.io/badge/KinetiAI-View_Repo-00FF41?style=for-the-badge&logo=github&logoColor=black)](https://github.com/swapnil-mayavanshi/Kineti_AI)
-
-</details>
-
-<details>
-<summary><b>🔍 Hybrid Search Pipeline @ NeuralVedaX</b>&nbsp;&nbsp;<code>INTERNSHIP</code></summary>
-<br>
-
-Production-grade enterprise search using multi-strategy retrieval.
-
-```
-BM25 (lexical)  ──┐
-                  ├──► RRF Fusion ──► Cross-Encoder Reranker ──► LLM
-FAISS (semantic) ─┘
-
-Multi-Provider LLM Abstraction: Anthropic · OpenAI · Gemini
-Deployed: FastAPI + Docker on Azure VM
-```
-
-- Diagnosed & fixed semantic over-generalization with MiniLM embeddings
-- Upgraded to `BAAI/bge-m3` + cross-encoder reranking
-- Built unified multi-provider LLM abstraction layer
-
-</details>
-
----
-
-## `$ cat tech_stack.json`
-
-```json
-{
-  "AI_ML"     : ["RAG Pipelines", "FAISS", "ChromaDB", "Hybrid Search",
-                  "LLM Orchestration", "HuggingFace", "LangChain", "Whisper"],
-  "Languages" : ["Python 🐍", "C++", "Java", "SQL"],
-  "Frameworks": ["FastAPI", "Streamlit", "Unity (C#)", "Flutter"],
-  "Infra"     : ["Docker", "Azure VM", "Git & GitHub"],
-  "Currently" : ["fast.ai", "Karpathy Zero-to-Hero", "System Design"]
-}
-```
-
----
-
-## `$ top` — Stats
-
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=aadi-novice&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00FF41&icon_color=00FF41&text_color=c9d1d9&count_private=true" />
-&nbsp;
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadi-novice&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00FF41&text_color=c9d1d9&langs_count=6" />
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com/?user=aadi-novice&theme=dark&hide_border=true&background=0d1117&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideLabels=00FF41&dates=888888" />
-
-</div>
-
----
-
-## `$ ping research_goals`
-
-```
-TRACEROUTE: Aditya Ambade → Funded Masters Abroad
-
-  Hop 1  Publications .............. ✓ 2x submitted
-  Hop 2  Internship ............. ✓ NeuralVedaX
-  Hop 3  Novel AI Project ................ ✓ KinetiAI
-  Hop 4  CGPA ............................ ✓ 8.1 / 10.0
-  Hop 5  Target Countries ................ JP | NZ | CA | DE
-
-  STATUS: All hops responding. Awaiting admission ping.
-  ETA   : 2026
-```
-
----
-
-## `$ history | grep life`
-
-```bash
-$ cron "every night" → watch --anime  # AoT · Vinland Saga · Monster · HxH
-$ ./morning_jog.sh --prep "10-day Himachal trek"
-$ grep -r "alpha" ./crypto_analysis/  # old Techmero days, never fully stops
-$ cat alex_xu_system_design.pdf       # always open on the desk
-$ python dsa_grind.py --sheet strivers_79  # daily, no excuses
-```
-
----
-
-## `$ cat contact.md`
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aditya_Ambade-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ambadeaditya)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-aadi--novice-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aadi-novice)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-Say_Hello-00FF41?style=for-the-badge&logo=gmail&logoColor=black)](mailto:aditya.ambade@outlook.com)
+| | |
+|---|---|
+| 🔭 **Now** | AI automation at Automated Softtech |
+| 🛠️ **Building** | KinetiAI, a multimodal AI physical therapy assistant |
+| 📚 **Learning** | System design, DSA, Japanese 🇯🇵 |
+| 🤝 **Open to** | Full stack + AI roles, remote or abroad |
 
 <br/>
 
-```
-> Open to : Research internships · AI/ML roles · Collabs
-> End game : Funded Masters in AI / Robotics
-> Motto    : Build things that matter. Ship fast. Learn faster.
+## 🚀 Featured work
 
-[EOF] — You made it to the bottom. Respect.
-      Most don't. You might be worth talking to.
-```
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🦾 KinetiAI
+*Multimodal AI physiotherapy for ACL recovery*
+
+Unity AR client + FastAPI backend. Voice dialogue mid-exercise (Whisper → LLaMA 3.1 → Sarvam TTS), FAISS-grounded clinical answers, and a biomechanical state machine for 3D rep counting.
+
+📄 2× IEEE papers submitted
+
+`Unity` `FastAPI` `FAISS` `Azure`
+
+[Repository →](https://github.com/swapnil-mayavanshi/Kineti_AI)
+
+</td>
+<td width="50%" valign="top">
+
+### 🔍 Hybrid search at NeuralVedaX
+*Enterprise retrieval, production-grade*
+
+BM25 + FAISS fused with RRF, reranked by a cross-encoder (`bge-m3`), behind a provider-agnostic LLM layer (Anthropic, OpenAI, Gemini). Knowledge-graph retrieval alongside. Dockerized on Azure.
+
+`FastAPI` `Docker` `Neo4j` `Azure`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🎤 Intervue
+*AI interview platform*
+
+Full stack interviewing app with semantic retrieval over pgvector, deployed on Azure.
+
+`FastAPI` `Next.js` `pgvector`
+
+</td>
+<td width="50%" valign="top">
+
+### 🩺 Medichat Bot
+*Medical RAG chatbot*
+
+Answers grounded in a curated medical knowledge base instead of free-form generation.
+
+`RAG` `LLM`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔕 Totem
+*QR-triggered focus app*
+
+Mobile app that starts focus sessions by scanning a QR code.
+
+`Flutter` `Kotlin`
+
+</td>
+<td width="50%" valign="top">
+
+### ⚙️ Publishing automation at Techmero
+*Agentic content pipeline*
+
+n8n + OpenAI workflows that automated publishing end to end.
+
+`n8n` `OpenAI`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 🧭 Experience
+
+| When | Role | Where |
+|:--|:--|:--|
+| Aug 2026 → now | **AI Automation Engineer Executive** | Automated Softtech Technology, GIFT City |
+| Feb → Jul 2026 | AI/ML Developer (intern) | NeuralVedaX, Vadodara |
+| Jun → Aug 2025 | Agentic AI Developer (intern) | Techmero, Vadodara |
+
+<br/>
+
+## 🧰 Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,cpp,java,kotlin,cs,dart,flutter,fastapi,nextjs,postgres,neo4j,pytorch,docker,azure,git,unity&perline=8" />
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=80&section=footer" width="100%"/>
+**AI / ML:** RAG · hybrid search · FAISS · ChromaDB · LangChain · HuggingFace · Whisper · LLM orchestration
+**Automation:** n8n · agent workflows
+
+<br/>
+
+## 🌍 Open source
+
+- **Graphify:** fixed a rendering bug on graphs with 1,000+ nodes
+- **Pyrefly (Meta):** fixed an LSP hover issue with `ParamSpec`
+
+<br/>
+
+## 📊 Activity
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=aadi-novice&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadi-novice&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
+
+<img src="https://streak-stats.demolab.com/?user=aadi-novice&theme=tokyonight&hide_border=true" />
+
+</div>
+
+<br/>
+
+## 🎓 Credentials
+
+Neo4j & Cypher Fundamentals · AWS Cloud Practitioner (Udacity) · Google 5-Day Gen AI Intensive · HackerRank SWE Intern · McKinsey Forward · GTU Ventures incubation, top 500+ teams (RESNET, 2025)
+
+<br/>
+
+## 🎌 Outside the editor
+
+Anime (Vinland Saga, Monster, HxH), trekking (Amarnath, Vaishno Devi), chess, music, and slowly learning Japanese.
+
+<br/>
+
+<div align="center">
+
+*Build things that matter. Ship fast. Learn faster.*
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:0f172a&height=60&section=footer" width="100%"/>
+
+</div>
