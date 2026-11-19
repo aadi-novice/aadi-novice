@@ -1,166 +1,119 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:6366f1&height=140&section=header&text=Aditya%20Ambade&fontSize=44&fontColor=ffffff&fontAlignY=50&desc=AI%20engineer%20%C2%B7%20RAG%20and%20agents%20%C2%B7%20full%20stack&descAlignY=72&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:6366f1&height=140&section=header&text=Aditya%20Ambade&fontSize=44&fontColor=ffffff&fontAlignY=50&desc=AI%20engineer%20%C2%B7%20RAG%20and%20agents%20%C2%B7%20production%20LLM%20systems&descAlignY=72&descSize=16" width="100%"/>
 
-**I build AI systems that retrieve, reason and automate — and the products around them.**
+**I build AI systems that retrieve, reason and automate, and I measure whether they actually work.**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ambade.me-6366f1?style=flat-square&logo=googlechrome&logoColor=white)](https://ambade.me)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ambadeaditya-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ambadeaditya)
-[![Email](https://img.shields.io/badge/Email-aditya.ambade@outlook.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aditya.ambade@outlook.com)
-![Views](https://komarev.com/ghpvc/?username=aadi-novice&color=6366f1&style=flat-square&label=profile+views)
+[![Email](https://img.shields.io/badge/Email-aditya.ambade@outlook.com-0078D4?style=flat-square&logo=microsoftoutlook&logoColor=white)](mailto:aditya.ambade@outlook.com)
 
 </div>
 
 <br/>
 
-## 👋 About
+## About
 
-I'm an **AI Automation Engineer** at Automated Softtech in GIFT City, Gandhinagar, and a 2026 BTech CSE graduate from ITM SLS Baroda University (CGPA 8.34). I work mostly on RAG, hybrid search, LLM orchestration and agent workflows, and I like taking them all the way to a deployed product.
+I'm an AI engineer in India with a B.Tech in Computer Science (2026). I work on production LLM systems end to end: schema-constrained model calls, deterministic logic around them, evaluation and cost tracking, and the FastAPI and PostgreSQL backends they run in.
 
 | | |
 |---|---|
-| 🔭 **Now** | AI automation at Automated Softtech |
-| 🛠️ **Building** | KinetiAI, a multimodal AI physical therapy assistant |
-| 📚 **Learning** | System design, DSA, Japanese 🇯🇵 |
-| 🤝 **Open to** | Full stack + AI roles, remote or abroad |
+| **Now** | Junior AI Automation Engineer on a client engagement, GIFT City (08/2026 to now) |
+| **Building** | [Nyaya Search](https://github.com/aadi-novice/nyaya-search): improving retrieval quality against a published evaluation |
+| **Looking for** | AI engineer, applied AI and forward-deployed roles, in India, remote or abroad |
+| **Learning** | Rust, system design, Japanese (about JLPT N5) |
 
 <br/>
 
-## 🚀 Featured work
+## Featured work
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### [Nyaya Search](https://github.com/aadi-novice/nyaya-search)
+*Cited legal research over Indian Supreme Court judgments, where code, not the model, checks every quote.*
 
-### 🦾 KinetiAI
-*Multimodal AI physiotherapy for ACL recovery*
+Layout-aware parsing and paragraph-level chunking of 13,007 judgments (296,151 chunks), hybrid BM25 + pgvector search with reciprocal rank fusion and Qwen3 reranking, a refusal threshold, and a FastAPI service with a web page. Every answer sentence quotes a retrieved passage word for word, and code verifies the quote before the sentence is shown. It runs on one 6 GB GPU with free tools.
 
-Unity AR client + FastAPI backend. Voice dialogue mid-exercise (Whisper → LLaMA 3.1 → Sarvam TTS), FAISS-grounded clinical answers, and a biomechanical state machine for 3D rep counting.
+Measured on a frozen question set (44 development, 40 unanswerable, 20 adversarial), development numbers, not a final test:
 
-📄 2× IEEE papers submitted
+| Check | Result |
+|---|---|
+| Citation violations | **0** in 186 sentences |
+| Unanswerable questions refused | **100%** |
+| p95 answer latency | **9.4 s** |
+| RAGAS faithfulness / context precision / context recall | **0.89 / 0.80 / 0.76** |
+| Right judgment in top 5 after reranking | 73% (target 75%, not met yet) |
 
-`Unity` `FastAPI` `FAISS` `Azure`
+The goals it misses are listed in the repo next to the ones it meets.
 
-[Repository →](https://github.com/swapnil-mayavanshi/Kineti_AI)
+`Python` `FastAPI` `PostgreSQL` `pgvector` `BM25` `RAGAS`
 
-</td>
-<td width="50%" valign="top">
+### [Intervue](https://github.com/aadi-novice/intervue)
+*Multi-tenant AI recruitment and interview platform.*
 
-### 🔍 Hybrid search at NeuralVedaX
-*Enterprise retrieval, production-grade*
+115+ REST endpoints on FastAPI, PostgreSQL + pgvector and Celery/Redis, with RBAC, API keys and webhooks. Structured LLM outputs, rubric scoring with versioned prompts, and an AI gateway that logs tokens, cost and latency per call. 570+ backend tests.
 
-BM25 + FAISS fused with RRF, reranked by a cross-encoder (`bge-m3`), behind a provider-agnostic LLM layer (Anthropic, OpenAI, Gemini). Knowledge-graph retrieval alongside. Dockerized on Azure.
+`FastAPI` `pgvector` `Celery` `Pydantic`
 
-`FastAPI` `Docker` `Neo4j` `Azure`
+### Customer-facing AI chatbot (client work)
+*Rebuilt as a tested standalone service.*
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+An LLM fills a JSON schema, a deterministic state machine decides, and a second LLM phrases the reply behind output checks, replacing a 400,000-character n8n workflow. About $0.003 per 10-turn conversation. Private client code.
 
-### 🎤 Intervue
-*AI interview platform*
+### Hybrid search at NeuralVedaX
+*Enterprise retrieval.*
 
-Full stack interviewing app with semantic retrieval over pgvector, deployed on Azure.
+A 35,000-edge knowledge graph built from 8,000+ documents, and a BM25 + FAISS retrieval engine with cross-encoder reranking over 2,000+ regulatory licenses. Deployed with FastAPI, Docker, PostgreSQL and Neo4j.
 
-`FastAPI` `Next.js` `pgvector`
+### [Totem](https://gettotem.app)
+*An Android focus app you switch off by scanning a real object.*
 
-</td>
-<td width="50%" valign="top">
-
-### 🩺 Medichat Bot
-*Medical RAG chatbot*
-
-Answers grounded in a curated medical knowledge base instead of free-form generation.
-
-`RAG` `LLM`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🔕 Totem
-*QR-triggered focus app*
-
-Mobile app that starts focus sessions by scanning a QR code.
-
-`Flutter` `Kotlin`
-
-</td>
-<td width="50%" valign="top">
-
-### ⚙️ Publishing automation at Techmero
-*Agentic content pipeline*
-
-n8n + OpenAI workflows that automated publishing end to end.
-
-`n8n` `OpenAI`
-
-</td>
-</tr>
-</table>
+Flutter UI with native Kotlin locking and QR-triggered blocking. Early access; Google Play launch pending.
 
 <br/>
 
-## 🧭 Experience
+## Experience
 
 | When | Role | Where |
 |:--|:--|:--|
-| Aug 2026 → now | **AI Automation Engineer Executive** | Automated Softtech Technology, GIFT City |
-| Feb → Jul 2026 | AI/ML Developer (intern) | NeuralVedaX, Vadodara |
-| Jun → Aug 2025 | Agentic AI Developer (intern) | Techmero, Vadodara |
+| 08/2026 to now | **Junior AI Automation Engineer** | Client engagement, GIFT City |
+| 02/2026 to 08/2026 | AI/ML Developer | NeuralVedaX, Vadodara |
+| 05/2025 to 08/2025 | Agentic AI Developer | Techmero, Vadodara |
 
 <br/>
 
-## 🧰 Stack
+## Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,cpp,java,kotlin,cs,dart,flutter,fastapi,nextjs,postgres,neo4j,pytorch,docker,azure,git,unity&perline=8" />
+<img src="https://skillicons.dev/icons?i=python,rust,fastapi,postgres,docker,react,nextjs,neo4j,pytorch,git&perline=10" />
 
 </div>
 
-**AI / ML:** RAG · hybrid search · FAISS · ChromaDB · LangChain · HuggingFace · Whisper · LLM orchestration
-**Automation:** n8n · agent workflows
+**AI / ML:** LLM applications and agents, structured outputs, RAG, hybrid search, reranking, evaluation (RAGAS), embeddings, knowledge graphs, FAISS, pgvector, PydanticAI, LangChain
+**Backend:** Python, FastAPI, SQLAlchemy, Celery, Redis, PostgreSQL, Neo4j
 
 <br/>
 
-## 🌍 Open source
+## Open source
 
 - **Graphify:** fixed a rendering bug on graphs with 1,000+ nodes
 - **Pyrefly (Meta):** fixed an LSP hover issue with `ParamSpec`
 
 <br/>
 
-## 📊 Activity
-
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=aadi-novice&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=aadi-novice&show_icons=true&theme=tokyonight&hide_border=true" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aadi-novice&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
-
-<img src="https://streak-stats.demolab.com/?user=aadi-novice&theme=tokyonight&hide_border=true" />
 
 </div>
 
 <br/>
 
-## 🎓 Credentials
+## Outside the editor
 
-Neo4j & Cypher Fundamentals · AWS Cloud Practitioner (Udacity) · Google 5-Day Gen AI Intensive · HackerRank SWE Intern · McKinsey Forward · GTU Ventures incubation, top 500+ teams (RESNET, 2025)
-
-<br/>
-
-## 🎌 Outside the editor
-
-Anime (Vinland Saga, Monster, HxH), trekking (Amarnath, Vaishno Devi), chess, music, and slowly learning Japanese.
-
-<br/>
+Anime, trekking, chess, music, and slowly learning Japanese.
 
 <div align="center">
-
-*Build things that matter. Ship fast. Learn faster.*
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:0f172a&height=60&section=footer" width="100%"/>
 
